@@ -1,0 +1,27 @@
+.slick-slider .slick{
+    &-arrow, &-dots{
+        display: none !important;
+    }
+}
+.slick-tab .slick{
+    &-slide{
+        padding:5px 15px;
+        text-align: center;
+        :hover{
+            color:rgb(218, 21, 47);
+            cursor: pointer;
+        }
+    }
+    &-current{
+        color:rgb(218, 21, 47);
+        border-bottom: 2px solid blue;
+    }
+}
+.slick-content .slick{
+    &-slide {
+        padding:5px 15px;
+        height: 200px;
+        background-color:antiquewhite;
+    
+    }
+}

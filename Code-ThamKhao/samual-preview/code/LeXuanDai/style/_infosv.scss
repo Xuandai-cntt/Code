@@ -1,0 +1,94 @@
+/*--------------------------------*/
+.welcome-area{
+    background: #f9f9f9;
+}
+.well-services {
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    background: #fff;
+	border-radius: 5px;
+}
+.main-services {
+    display: block;
+    overflow: hidden;
+    padding: 40px 20px 30px;
+    position: relative;
+    z-index: 1;
+}
+.services-img {
+    margin-bottom: 20px;
+    a{
+        font-size: 40px;
+        color:#df0f31;
+    }
+}
+
+.service-content
+{ 
+    p{
+        font-size: 15px;
+        color:#666;
+        letter-spacing: 1px;
+    }
+    img{
+        width: 300px;
+        height: 200px;
+    }
+
+}
+.image-layer {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.98) none repeat scroll 0 0;
+    z-index: 1;
+    opacity: 0;
+	transition: 0.4s;
+	padding: 30px;
+    a {
+        display: block;
+        text-align: left;
+        position: relative;
+        margin-bottom: 10px;
+        color: #444;
+        font-size: 17px;
+    }
+    a i {
+        border-radius: 50%;
+        background: transparent;
+        font-size: 20px;
+        opacity: 0.90;
+        line-height: 30px;
+        margin-right: 15px;
+    }
+}
+.service-content h4 {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0;
+    padding: 0 0 10px;
+    text-transform: uppercase;
+}
+.well-services:hover .image-layer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.4s;
+	opacity: 1;
+}
+.well-services:hover .service-content h4{
+    color: #df0f31;
+}
+.well-services:hover .service-btn:hover{
+    color: #df0f31;
+}
+.image-layer a:hover{
+   color: #df0f31;
+}
+.service-content img{
+    width: 300px;
+    height: 200px;
+}

@@ -1,0 +1,49 @@
+/* 9. Video area css
+/*----------------------------------------*/
+.video-area {
+  position: relative;
+  background: transparent url(/img/background/bg1.jpg);
+}
+
+.video-inner {
+  padding: 40px 0px;
+}
+
+.video-inner h3 {
+  color: #fff;
+  margin-top: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 26px;
+}
+
+.video-played p {
+  color: #fff;
+  padding: 0px 200px;
+  margin-top: 20px;
+}
+
+.video-play.vid-zone {
+  background: #e22a31 none repeat scroll 0 0;
+  border-radius: 100%;
+  display: inline-block;
+  font-size: 28px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  width: 80px;
+}
+
+.video-play.vid-zone i {
+  color: #fff;
+  margin-left: 5px;
+}
+
+.video-play.vid-zone:hover {
+  background: #fff;
+  color: #e22a31;
+}
+
+.video-play.vid-zone:hover i {
+  color: #e22a31;
+}

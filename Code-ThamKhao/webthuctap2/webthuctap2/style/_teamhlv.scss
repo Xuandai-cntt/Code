@@ -1,0 +1,65 @@
+/*  12 Team Area css
+/*----------------------------------------*/
+
+.team-area {
+    background: #fff;
+}
+
+.team-content {
+    position: absolute;
+    top: 40%;
+    content: "";
+    left: 0;
+    right: 0;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.team-content h4 a {
+    color: #e22a31;
+}
+
+.team-content p {
+    margin-bottom: 0;
+}
+
+.team-content h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.team-content .social-icon {
+    margin-top: 15px;
+}
+
+.social-icon li a:hover {
+    border: 1px solid #e22a31;
+    color: #fff;
+    background: #e22a31;
+}
+
+.single-member .team-img::after {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: 0.5s;
+    box-shadow: 2px 2px 20px #ddd;
+}
+
+.single-member:hover .team-img::after {
+    opacity: 1;
+}
+
+.single-member:hover .team-content {
+    opacity: 1;
+}
+
+
+/*----------------------------------------*/

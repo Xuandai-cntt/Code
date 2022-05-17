@@ -1,0 +1,32 @@
+/*----------------------------------------*/
+.counter{
+    &-area{
+        background: rgba(0, 0, 0, 0);
+    }
+    &-head {
+        background: #f6f6f6;
+        padding: 50px 30px 50px 80px;
+        h4{
+            text-align: center;
+        }
+    }
+    &-text{
+        float: left;
+        margin-left: 5px;
+        width: 33%;
+        text-align: center;
+        background: rgba(255,255,255,0.95);
+        padding: 30px 15px;
+        border-radius: 5px;
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+        span {
+            color: #df0f31;
+            display: block;
+            font-size: 36px;
+            font-weight: bold;
+            padding-bottom: 10px;
+            line-height: 40px;
+        }
+    }
+}
+ /*--------------------------------*/

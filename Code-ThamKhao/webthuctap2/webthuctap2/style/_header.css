@@ -1,0 +1,191 @@
+/*  2. Header Area 
+/*----------------------------------------*/
+.header-area {
+  background: transparent;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 9999;
+}
+
+.header-area.stick {
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999999;
+  box-shadow: 1px 1px 3px #ddd;
+  background: #fff;
+}
+
+.logo {
+  display: block;
+  height: 70px;
+}
+
+.logo a {
+  display: inline-block;
+  height: auto;
+  padding: 15px 0;
+}
+
+.main-menu ul.navbar-nav li {
+  float: left;
+  position: relative;
+}
+
+.main-menu ul.navbar-nav li a {
+  background: transparent none repeat scroll 0 0;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 30px 15px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+  border: medium none;
+  margin-bottom: 0;
+}
+
+.navbar-default {
+  background: transparent none repeat scroll 0 0;
+}
+
+.stick .main-menu ul.navbar-nav li a,
+.stick .header-social > li > a {
+  color: #444;
+}
+
+.navbar-default .navbar-toggle {
+  background: transparent none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 0;
+  padding: 25px 0px;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  background-color: transparent;
+  color: #df0f31;
+}
+
+.main-menu ul.nav li ul.sub-menu {
+  background: #333;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 115%;
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  width: 200px;
+  z-index: -99;
+  border-top: 2px solid #df0f31;
+}
+
+.pagess {
+  position: relative;
+}
+
+.main-menu ul.nav li ul.sub-menu li {
+  padding: 0;
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #444;
+}
+
+.main-menu ul.nav li ul.sub-menu li:last-child {
+  border-bottom: none;
+}
+
+.main-menu ul.nav li:hover ul.sub-menu {
+  top: 100%;
+  opacity: 1;
+  z-index: 999;
+  visibility: visible;
+}
+
+.main-menu ul.nav li ul.sub-menu li a {
+  color: #f2f2f2;
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 8px 20px;
+  text-transform: uppercase;
+}
+
+.main-menu ul.nav li:hover ul.sub-menu li a:hover {
+  color: #df0f31;
+  background: #444;
+}
+
+.main-menu ul.nav li ul.sub-menu li a {
+  position: relative;
+}
+
+.sub-dropdown {
+  background: white none repeat scroll 0 0;
+  position: absolute;
+  top: 20px;
+  transition: all 0.3s ease 0s;
+  width: 220px;
+  left: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease 0s;
+}
+
+.main-menu ul.nav li ul.sub-menu li:hover .sub-dropdown {
+  visibility: visible;
+  opacity: 1;
+  top: 0px;
+}
+
+.navbar.navbar-default {
+  float: right;
+}
+
+.header-social {
+  float: right;
+  padding: 25px 0px;
+}
+
+.header-social > li {
+  display: inline-block;
+}
+
+.header-social > li > a {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+.header-social > li > a:hover {
+  color: #df0f31;
+}
+
+.sticky-logo > img {
+  display: none;
+}
+
+.stick .navbar-brand > img {
+  display: none;
+}
+
+.stick .navbar-brand.sticky-logo > img {
+  display: block;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background: none;
+  color: #df0f31;
+}
+
+/*----------------------------------------*/

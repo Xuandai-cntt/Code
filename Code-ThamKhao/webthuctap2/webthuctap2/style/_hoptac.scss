@@ -1,0 +1,80 @@
+/*  16.	Contact area css
+/*----------------------------------------*/
+
+.contact-details {
+    display: block;
+    overflow: hidden;
+    background: #f5f5f5;
+    padding: 40px 30px;
+    margin-bottom: 40px;
+}
+
+.contact-head {
+    background: #f9f9f9;
+    padding: 40px 30px;
+}
+
+.contact-head h3 {
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.single-contact a i {
+    color: #df0f31;
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.single-contact a {
+    color: #666;
+    font-size: 16px;
+    display: block;
+}
+
+.contact-head p {
+    font-size: 16px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+    border: 1px solid #ccc;
+    border-radius: 0;
+    height: 44px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    width: 100%;
+}
+
+.contact-form textarea#message {
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    height: 180px;
+    padding: 20px;
+    width: 100%;
+}
+
+.contact-page .contact-btn {
+    background: #df0f31;
+    border: 2px solid #df0f31;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 5px;
+    padding: 10px 40px;
+    transition: 0.4s;
+    width: auto;
+    text-transform: uppercase;
+    border-radius: 2px;
+    font-weight: 700;
+}
+
+.contact-page .contact-btn:hover {
+    background: transparent;
+    border: 2px solid #df0f31;
+    color: #df0f31;
+    transition: 0.4s;
+}

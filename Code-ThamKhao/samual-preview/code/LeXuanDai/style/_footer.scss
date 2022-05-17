@@ -1,0 +1,22 @@
+.footer-social ul li {
+    display: inline-block;
+    margin: 0px 2px;
+}
+.footer-social ul li a {
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 0px 5px;
+    text-transform: uppercase;
+    display: block;
+    border: 1px solid black;
+    width: 34px;
+    height: 34px;
+    line-height: 32px;
+    border-radius: 50%;
+    &:hover{
+        color:black;
+        background:#df0f31;
+        border: 1px solid #df0f31;
+    }
+}

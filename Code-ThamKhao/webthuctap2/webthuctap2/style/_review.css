@@ -1,0 +1,117 @@
+/* 11.Testimonial area Css
+/*----------------------------------------*/
+.testimonial-area {
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.review-area {
+  padding: 20px 0px 50px;
+}
+
+.single-client {
+  width: 33.33%;
+  float: left;
+}
+
+.single-client img {
+  border: 1px solid #ccc;
+}
+
+.single-testi {
+  padding: 30px 20px;
+  position: relative;
+  background-color: #fff;
+}
+
+.testimonial-img {
+  margin-top: 15px;
+}
+
+.testimonial-img img {
+  width: 100%;
+  float: left;
+  max-width: 80px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.testimonial-text {
+  border: 1px solid #ccc;
+  padding: 20px;
+  color: #fff;
+}
+
+.testimonial-text p {
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.testimonial-text h5 {
+  color: #fff;
+  font-size: 20px;
+}
+
+.testimonial-text a {
+  color: #e22a31;
+}
+
+.client-name {
+  margin-top: 15px;
+  display: inline-block;
+}
+
+.client-name h4 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-bottom: 0px;
+  color: #fff;
+}
+
+.client-name span {
+  font-size: 13px;
+  color: #fff;
+}
+
+.testimonial-content {
+  padding-bottom: 50px;
+}
+
+.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots {
+  bottom: -45px;
+  display: block;
+  left: 50%;
+  margin-left: -30px;
+  position: absolute;
+  text-align: left;
+}
+
+.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots div.owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots div.owl-dot > span {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 50%;
+  display: inline-block;
+  height: 8px;
+  transition: all 0.4s ease 0s;
+  width: 8px;
+  -moz-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  -ms-transition: 0.4s;
+}
+
+.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots div.owl-dot.active span {
+  background: #df0f31 none repeat scroll 0 0;
+  left: 0;
+  width: 20px;
+  border-radius: 10px;
+}
+
+/*----------------------------------------*/

@@ -1,0 +1,990 @@
+
+
+/* Google Fonts Here */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800|Open+Sans:400,400i,600,700');
+
+/*----------------------------------------*/
+/*  1.  Theme default CSS
+/*----------------------------------------*/
+
+html, body {
+	height: 100%;
+}
+p {
+	margin:0 0 15px;
+    color: #666;
+}
+h1, h2, h3, h4, h5, h6 {
+   font-family: 'Montserrat', sans-serif;
+   margin: 0 0 10px;
+   color: #444;
+   font-weight: 700;
+}
+h1{
+   font-size: 42px;
+   line-height: 44px;
+}
+h2{
+    font-size: 34px;
+    line-height: 40px;
+}
+h3{
+    font-size: 30px;
+    line-height: 40px;
+}
+h4{
+    font-size: 26px;
+    line-height: 30px;
+}
+h5{
+    font-size: 22px;
+    line-height: 26px;
+}
+h6{
+    font-size: 18px;
+    line-height: 24px;
+}
+ a {
+	transition: all 0.3s ease 0s;
+	text-decoration:none;
+}
+a:hover {
+  color: #252525;
+  text-decoration: none;
+}
+a:active, a:hover {
+  outline: 0 none;
+}
+hr {
+    border-color: #d9d9d9;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+ul{
+list-style: outside none none;
+margin: 0;
+padding: 0;
+}
+.area-padding {
+  padding: 80px 0;
+}
+.blog-padding {
+    padding: 80px 0 20px;
+}
+.section-head > p {
+    max-width: 600px;
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #666;
+}
+.section-head{
+    position: relative;
+    margin-bottom: 40px;
+}
+.section-head > h3 {
+    display: block;
+    font-size: 34px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #444;
+}
+.section-head.white-head > h3,
+.section-head.white-head > p{
+    color: #fff;
+}
+.section-head::after {
+    background-color: #df0f31;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    width: 50px;
+}
+#scrollUp {
+  background: #000 none repeat scroll 0 0;
+  border-radius: 2px;
+  bottom: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  color: #fff;
+  font-size: 20px;
+  height: 34px;
+  line-height: 30px;
+  right: 15px;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  width: 34px;
+}
+#scrollUp:hover {
+    background: #df0f31;
+}
+.clear{
+	clear:both;
+}
+a:focus {
+    color: #df0f31;
+    text-decoration: none;
+}
+body {
+  background: #fff none repeat scroll 0 0;
+  color: #999999;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  text-align: left;
+  overflow-x: hidden;
+  line-height: 22px;
+}
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+.intro-default {
+    width: 100%;
+    height: auto;
+}
+:focus {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+.display-table {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+.display-table-cell {
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+.parallax-bg,
+.parallax-white-bg{
+    position:relative;
+	z-index: 1;
+}
+.parallax-bg:before{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:#111;
+    opacity:.7;
+    content:"";
+	z-index: -1;
+}
+.parallax-white-bg:before{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:#fff;
+    opacity:.7;
+    content:"";
+	z-index: -1;
+}
+.color{
+    color:#df0f31;
+    font-weight: 800;
+}
+input, select, textarea, input[type="text"], input[type="date"], input[type="url"], input[type="email"], input[type="password"], input[type="tel"], button, button[type="submit"] {
+  -moz-appearance: none;
+  box-shadow: none !important;
+}
+div#preloader { position: fixed; left: 0; top: 0; z-index: 99999; width: 100%; height: 100%; overflow: visible; background: #fff url('img/logo/preloader.gif') no-repeat center center; }
+.logo {
+    display: block;
+      height: 70px;
+      a{   display: inline-block;
+        height: auto;
+        padding: 15px 0;
+      }
+      img{
+          width:20%;
+          height: 20%;
+      }
+  }
+.header-area{
+    background: transparent;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 9999;
+}
+.header-area.stick {
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+	box-shadow: 1px 1px 3px #ddd;
+    background: #fff;
+}
+.main-menu ul.navbar-nav li {
+    float: left;
+    position: relative;
+}
+.main-menu ul.navbar-nav li a {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 30px 15px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar {
+    border: medium none;
+    margin-bottom: 0;
+}
+.navbar-default {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+.stick .main-menu ul.navbar-nav li a,
+.stick .header-social >li>a {
+    color: #444;
+}
+.navbar-default .navbar-toggle {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 0;
+    padding: 25px 0px;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: transparent;
+    color: #df0f31;
+}
+.main-menu ul.nav li ul.sub-menu {
+    background: #333;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 115%;
+    transition: all 0.3s ease 0s;
+    visibility: hidden;
+    width: 200px;
+    z-index: -99;
+    border-top: 2px solid #df0f31;
+}
+.pagess {
+    position: relative;
+}
+.main-menu ul.nav li ul.sub-menu li {
+  padding: 0;
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #444
+}
+.main-menu ul.nav li ul.sub-menu li:last-child{
+  border-bottom: none;
+}
+.main-menu ul.nav li:hover ul.sub-menu{
+    top:100%;
+    opacity:1;
+    z-index:999;
+    visibility:visible;
+}
+.main-menu ul.nav li ul.sub-menu li a {
+    color: #f2f2f2;
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 8px 20px;
+    text-transform: uppercase;
+}
+.main-menu ul.nav li:hover ul.sub-menu li a:hover{
+    color:#df0f31;
+    background: #444;
+}
+.main-menu ul.nav li ul.sub-menu li a{
+	position: relative;
+}
+.sub-dropdown {
+  background: rgba(255, 255, 255, 1) none repeat scroll 0 0;
+  position: absolute;
+  top: 20px;
+  transition: all 0.3s ease 0s;
+  width: 220px;
+  left: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease 0s;
+}
+.main-menu ul.nav li ul.sub-menu li:hover .sub-dropdown{
+	visibility: visible;
+	opacity: 1;
+	top: 0px;
+}
+.navbar.navbar-default {
+    float: right;
+}
+.header-social {
+    float: right;
+    padding: 25px 0px;
+}
+.header-social >li{
+    display:inline-block;
+}
+.header-social >li>a {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+    padding-left: 10px;
+}
+.header-social >li>a:hover{
+	color:#df0f31;
+}
+.sticky-logo > img {
+    display: none;
+}
+.stick .navbar-brand > img {
+    display: none;
+}
+.stick .navbar-brand.sticky-logo > img {
+    display: block;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+    background: none;
+    color:#df0f31;
+}
+/*  3. Mobile Menu Area
+/*----------------------------------------*/
+.mobile-menu-area {
+    background: #f9f9f9 none repeat scroll 0 0;
+    padding: 10px 0px ;
+}
+.mean-container .mean-bar::after {
+    content: "";
+    font-size: 21px;
+    left: 5%;
+    position: absolute;
+    top: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.mean-container a.meanmenu-reveal:hover {
+    color:#252525
+}
+.mean-container .mean-nav ul {
+    list-style-type: none;
+    margin: 20px 0px;
+    padding: 0;
+    width: 100%;
+}
+.mean-container .mean-nav ul li a {
+    background: #f8f8f8 none repeat scroll 0 0;
+    color: #444;
+    display: block;
+    float: left;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0;
+    padding: 13px 10px;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 90%;
+}
+.mean-nav ul li.mean-last {
+    margin-bottom: 20px;
+}
+.mean-container .mean-nav ul li a.mean-expand {
+    color: #444;
+    line-height: 17px;
+}
+.mean-container .mean-nav ul li {
+    width: 99.7%;
+}
+.stick .main-menu ul.navbar-nav li.active a{
+    color: #df0f31;
+}
+/*--------------------------------*/
+/*  4.Slide Area
+/*--------------------------------*/
+.slide-area {
+    background: rgba(0, 0, 0, 0) url(img/image1.jpg) no-repeat scroll bottom center / cover;
+    width: 100%;
+    height: 100%;
+}
+.title{
+    &-1{
+        color: #fff;
+        font-weight: 400;
+        font-size: 34px;
+        letter-spacing: 1px;
+    }
+    &-2{
+        font-size: 70px;
+        line-height: 70px;
+        margin-bottom: 0px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 20px 0px;
+    }
+}
+.intro-content p {
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.slider
+{
+    &-button{
+         margin-top: 20px;
+    }
+    &-btn{
+        color: #fff;
+        font-weight: 700;
+        display: inline-block;
+        background: #df0f31;
+        padding: 6px 30px;
+        border: 2px solid #df0f31;
+        border-radius: 50px;
+    }
+    &-btn:hover{
+        background-color: none;
+        color: #fff;
+        transition: 0.5s;
+        background: transparent;
+    }
+}
+/*----------------------------------------*/
+/*  5. About Area 
+/*----------------------------------------*/
+.about-inner h5 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.our-skill-team{
+	padding-top: 30px;
+}
+.skill .progress .lead {
+    top: -30px;
+    color: #666;
+    font-size: 15px;
+    font-weight: normal;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    z-index: 99;
+	font-weight: 700;
+}
+.skill .progress .lead span {
+  color: #666;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.progress-bar {
+  background-color: #df0f31;
+}
+.skill .progress {
+    background-color: #f0f0f0;
+    border-radius: 0;
+    box-shadow: none;
+    height: 5px;
+    margin-bottom: 70px;
+    overflow: visible;
+    position: relative;
+}
+.skill .progress-bar > span {
+    float: right;
+    font-size: 13px;
+    margin-top: -26px;
+    position: relative;
+    padding: 0 5px;
+    color: #666;
+	font-weight: 700;
+}
+.skill .progress:last-child{
+	margin-bottom: 0px;
+}
+.maz
+{
+    &-button{
+         margin-top: 20px;
+    }
+    &-read{
+        color: black;
+        display: inline-block;
+        background: rgba(245, 144, 39, 0.8);
+        padding: 6px 30px;
+        border-radius: 50px;
+        :hover{
+            background-color: none;
+            color: #fff;
+            transition: 0.5s;
+            //background: transparent;
+        }
+    }
+    &-phone{
+        float: right;
+        padding-right: 100px;
+       font-size:120%;
+       padding-top: 10px;;
+    }
+}
+/* 6.Welcome Services Area
+/*--------------------------------*/
+.welcome-area{
+    background: #f9f9f9;
+}
+.well-services {
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    background: #fff;
+	border-radius: 5px;
+}
+.main-services {
+    display: block;
+    overflow: hidden;
+    padding: 40px 20px 30px;
+    position: relative;
+    z-index: 1;
+}
+.services-img {
+    margin-bottom: 20px;
+}
+.services-img a{
+	font-size: 40px;
+	color:#df0f31;
+}
+.service-content p{
+	font-size: 15px;
+	color:#666;
+	letter-spacing: 1px;
+}
+.image-layer {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.98) none repeat scroll 0 0;
+    z-index: 1;
+    opacity: 0;
+	transition: 0.4s;
+	padding: 30px;
+}
+.image-layer a {
+    display: block;
+    text-align: left;
+    position: relative;
+    margin-bottom: 10px;
+    color: #444;
+	font-size: 17px;
+}
+.image-layer a i {
+    border-radius: 50%;
+    background: transparent;
+    font-size: 20px;
+    opacity: 0.90;
+    line-height: 30px;
+    margin-right: 15px;
+}
+.service-content h4 {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0;
+    padding: 0 0 10px;
+    text-transform: uppercase;
+}
+.well-services:hover .image-layer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.4s;
+	opacity: 1;
+}
+.well-services:hover .service-content h4{
+    color: #df0f31;
+}
+.well-services:hover .service-btn:hover{
+    color: #df0f31;
+}
+.image-layer a:hover{
+   color: #df0f31;
+}
+
+/* 10. Features Area Css
+/*----------------------------------------*/
+.features-inner{
+	margin-top: -30px;
+}
+.single-features{
+	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    background: #fff;
+	border-radius: 5px;
+	padding: 40px 20px 30px;
+	margin-top: 30px;
+}
+.features-icon a {
+    font-size: 40px;
+    margin-bottom: 20px;
+    display: inline-block;
+    line-height: 40px;
+    color: #e22a31;
+}
+.features-content h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+.features-content p {
+    font-size: 15px;
+    color: #666;
+    letter-spacing: 1px;
+}
+.btn-view{
+    margin-top:10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 1150px;
+      
+      
+}
+/*----------------------------------------*/
+/* 9. Video area css
+/*----------------------------------------*/
+.video{
+    &-bg{
+    position:relative;
+    background: rgba(0, 0, 0, 0) url(img/nghe-noi.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+    }
+    &-vd{
+        padding: 50px;
+        h3{
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 26px;       
+        }
+    }
+}
+.video-play.vid-zone {
+    background: #e22a31 none repeat scroll 0 0;
+    border-radius: 100%;
+    display: inline-block;
+    font-size: 28px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    width: 80px;
+}
+.video-play.vid-zone {
+    i {
+    color: #fff;
+    }
+    :hover {
+        background: #fff;
+        color: #e22a31;
+        i{
+            color: #e22a31;
+        }
+    }
+}
+/* 14. Blog Area Css
+/*----------------------------------------*/
+.pop-single {
+    margin-bottom: 5px;
+    position: relative;
+    overflow: hidden;
+}
+.pop{
+    &-content a h4:hover{
+    color:red;
+    }
+    &-span{
+        color:red;
+        font-weight: 700;
+        text-transform: uppercase;
+        position: relative;
+        top: -41px;
+        background: aqua;
+        padding: 10px 15px;
+        max-width: 220px;
+    }
+    &-btn{
+        display: inline-block;
+        font-weight: 700;
+        color: black;   
+        position: relative;
+        padding: 6px 20px;
+        text-transform: uppercase;
+        font-size: 13px;
+        border-radius: 5px;
+        background: rgb(245, 245, 107);
+        border: 2px solid red;
+    }
+}
+.pop-btn:hover {
+    color: #df0f31;
+	background: #fff;
+	border: 2px solid #df0f31;
+}
+/*----------------------------------------*/
+/* 7.Counter Area
+/*----------------------------------------*/
+.counter{
+    &-area{
+        background: rgba(0, 0, 0, 0);
+    }
+    &-head {
+        background: #f6f6f6;
+        padding: 50px 30px 50px 80px;
+        h4{
+            text-align: center;
+        }
+    }
+    &-text{
+        float: left;
+        margin-left: 5px;
+        width: 33%;
+        text-align: center;
+        background: rgba(255,255,255,0.95);
+        padding: 30px 15px;
+        border-radius: 5px;
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+        span {
+            color: #df0f31;
+            display: block;
+            font-size: 36px;
+            font-weight: bold;
+            padding-bottom: 10px;
+            line-height: 40px;
+        }
+    }
+}
+ /*--------------------------------*/
+ /* 11.Testimonial area Css
+/*----------------------------------------*/
+.testimonial{
+    &-img {
+    img {
+        width: 100%;
+        float: left;
+        max-width: 250px;;
+        height: auto;
+        border-radius: 50%;
+        margin-right: 30px;
+    }
+    &-text{
+        border: 1px solid black;;
+        color:black;
+        p {
+            color:black;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+        h5 {
+            color: black;
+            font-size: 20px;
+        }
+        a{
+            color: #e22a31;  
+          }
+    }
+}
+}
+.client{
+    &-name {
+    margin-top: 15px;
+    display: inline-block;
+        h4 {
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 15px;
+            margin-bottom: 0px;
+            color:black;
+        }
+        span {
+            font-size: 13px;
+            color:black;
+        }
+    }
+}
+.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots {
+    bottom: -45px;
+    display: block;
+    left: 50%;
+    margin-left: -30px;
+    position: absolute;
+    text-align: left;
+}
+.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots div.owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+}
+.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots div.owl-dot > span {
+    background:black none repeat scroll 0 0;
+    border-radius: 50%;
+    display: inline-block;
+    height: 8px;
+    transition: all 0.4s ease 0s;
+    width: 8px;
+    -moz-transition:0.4s;
+    -webkit-transition:0.4s;
+    -o-transition:0.4s;
+    -ms-transition:0.4s;
+}
+.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots div.owl-dot.active span {
+    background: #df0f31 none repeat scroll 0 0;
+    left: 0;
+    width: 20px;
+    border-radius: 10px;
+}
+/*----------------------------------------*/
+.contact-details {
+    display: block;
+    overflow: hidden;
+    background: #f5f5f5;
+    padding: 40px 30px;
+    margin-bottom: 40px;
+}
+.contact-head {
+    background-image: url("./img/image2.jpg");
+    background-repeat: no-repeat;
+    padding: 40px 30px;
+}
+
+.contact-head h3 {
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.single-contact a i {
+    color: #df0f31;
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.single-contact a {
+    color: white;
+    font-size: 16px;
+    display: block;
+}
+
+.contact-head p {
+    font-size: 16px;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+    border: 1px solid #ccc;
+    border-radius: 0;
+    height: 44px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    width: 100%;
+}
+
+.contact-form textarea#message {
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    height: 180px;
+    padding: 20px;
+    width: 100%;
+}
+
+.contact-page .contact-btn {
+    background: #df0f31;
+    border: 2px solid #df0f31;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 5px;
+    padding: 10px 40px;
+    transition: 0.4s;
+    width: auto;
+    float: left;
+    text-transform: uppercase;
+    border-radius: 2px;
+    font-weight: 700;
+}
+
+.contact-page .contact-btn:hover {
+    background: transparent;
+    border: 2px solid #df0f31;
+    color: #df0f31;
+    transition: 0.4s;
+}
+.service-content img{
+    width: 300px;
+    height: 200px;
+}
+.subscribe-area {
+    position: relative;
+    background: rgba(0, 0, 0, 0) url(img/slide3.jpg);
+}
+
+.subs-title {
+    margin-bottom: 30px;
+}
+
+.subs-title h4 {
+    font-size: 30px;
+    font-weight: 500;
+}
+.left{
+    &-content{
+        margin-top:20px;
+        padding-left: 20px;
+    }
+    &-span{
+        color:red;
+        font-weight: 700;
+        text-transform: uppercase;
+        position: relative;
+        padding: 10px 15px;
+        max-width: 220px;
+    }
+}
+.footer-social ul li {
+    display: inline-block;
+    margin: 0px 2px;
+}
+.footer-social ul li a {
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 0px 5px;
+    text-transform: uppercase;
+    display: block;
+    border: 1px solid black;
+    width: 34px;
+    height: 34px;
+    line-height: 32px;
+    border-radius: 50%;
+}
+.footer-social ul li a:hover{
+    color:black;
+	background:#df0f31;
+    border: 1px solid #df0f31;
+}

@@ -1,0 +1,61 @@
+/*  3. Mobile Menu Area
+/*----------------------------------------*/
+.mobile-menu-area {
+  background: #f9f9f9 none repeat scroll 0 0;
+  padding: 10px 0px;
+}
+
+.mean-container .mean-bar::after {
+  content: "";
+  font-size: 21px;
+  left: 5%;
+  position: absolute;
+  top: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.mean-container a.meanmenu-reveal:hover {
+  color: #252525;
+}
+
+.mean-container .mean-nav ul {
+  list-style-type: none;
+  margin: 20px 0px;
+  padding: 0;
+  width: 100%;
+}
+
+.mean-container .mean-nav ul li a {
+  background: #f8f8f8 none repeat scroll 0 0;
+  color: #444;
+  display: block;
+  float: left;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0;
+  padding: 13px 10px;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 90%;
+}
+
+.mean-nav ul li.mean-last {
+  margin-bottom: 20px;
+}
+
+.mean-container .mean-nav ul li a.mean-expand {
+  color: #444;
+  line-height: 17px;
+}
+
+.mean-container .mean-nav ul li {
+  width: 99.7%;
+}
+
+.stick .main-menu ul.navbar-nav li.active a {
+  color: #df0f31;
+}
+
+/*--------------------------------*/

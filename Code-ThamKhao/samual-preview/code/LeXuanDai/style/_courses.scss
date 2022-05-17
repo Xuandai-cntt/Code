@@ -1,0 +1,39 @@
+/*----------------------------------------*/
+.features-inner{
+	margin-top: -30px;
+}
+.single-features{
+	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    background: #fff;
+	border-radius: 5px;
+	padding: 40px 20px 30px;
+	margin-top: 30px;
+}
+.features-icon a {
+    font-size: 40px;
+    margin-bottom: 20px;
+    display: inline-block;
+    line-height: 40px;
+    color: #e22a31;
+}
+.features-content{
+    h4 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    p {
+        font-size: 15px;
+        color: #666;
+        letter-spacing: 1px;
+    }
+}
+.btn-view{
+    margin-top:10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 1150px;
+      
+      
+}

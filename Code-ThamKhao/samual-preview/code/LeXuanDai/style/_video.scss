@@ -1,0 +1,39 @@
+/*----------------------------------------*/
+.video{
+    &-bg{
+    position:relative;
+    background: rgba(0, 0, 0, 0) url(../img/nghe-noi.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+    }
+    &-vd{
+        padding: 50px;
+        h3{
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 26px;       
+        }
+    }
+}
+.video-play.vid-zone {
+    background: #e22a31 none repeat scroll 0 0;
+    border-radius: 100%;
+    display: inline-block;
+    font-size: 28px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    width: 80px;
+}
+.video-play.vid-zone {
+    i {
+    color: #fff;
+    }
+    :hover {
+        background: #fff;
+        color: #e22a31;
+        i{
+            color: #e22a31;
+        }
+    }
+}
